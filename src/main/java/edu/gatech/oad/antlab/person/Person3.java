@@ -9,7 +9,7 @@ package edu.gatech.oad.antlab.person;
  */
 public class Person3 {
    /** Holds the persons real name */  
-	private String name;
+	private String name = "Ivana Perez";
 	
 	/**
 	 * The constructor, takes in the persons
