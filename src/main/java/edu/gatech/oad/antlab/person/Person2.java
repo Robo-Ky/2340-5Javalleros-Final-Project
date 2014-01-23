@@ -1,5 +1,5 @@
+package edu.gatech.oad.antlab.person;
 import java.util.Random;
-
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -18,12 +18,6 @@ public class Person2 {
      */
     public Person2(String pname) {
         name = pname;
-    }
-    public static void main(String[] args){
-        Person2 me = new Person2("Ruobin Ling");
-        for (int i=0;i<10;i++){
-            System.out.println(me.toString("12345"));
-        }
     }
     /**
      * This method should take the string
