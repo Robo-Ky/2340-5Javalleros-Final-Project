@@ -1,1 +1,19 @@
 apply plugin: 'java'
+sourceCompatibility = '1.7'
+version = '1.0'
+defaultTasks 'jar'
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/res'
+        }
+    }
+}
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'sjung80', 'Implementation-Version': '1.7'
+    }
+}
+dependencies {
+    compile files('lib/resources.jar')
+}
