@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+defaultTasks 'jar'
+version = '1.0'
+sourceCompatibility = '1.7'
+
+sourceSets {
+		main {
+				resources {
+						srcDir 'src/res'
+				}
+		}
+}
+
+jar {
+	manifest {
+			attributes 'Implementation-Title': 'rling3', 'Implementation-version': version, 'Main-Class':'edu.gatech.oad.antlab.pkg1.AntLabMain'
+	}
+}
+
+dependencies {
+	compile files('lib/resources.jar')
+}
